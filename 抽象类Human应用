@@ -8,3 +8,44 @@ public class Japanese implements Human {
     	return 1;
     }
 }
+
+public class Chinese implements Human{
+	
+    public double sayhello() {
+    	System.out.printf("我的名字叫小姚");
+    	System.out.println();
+    	return 0;
+    }
+	
+}
+public class English implements Human {
+	
+    public double sayhello() {
+    	System.out.printf("my name is xiaoyao");
+    	System.out.println();
+    	return 2;
+    }
+}
+public interface Human {
+   abstract public double sayhello() ;
+   
+}
+
+public class HumanTest {
+    Human[] human=new Human[3];
+    public HumanTest(Human hh[]) {
+    	for(int i=0;i<3;i++) {
+    		this.human[i]=hh[i];
+    	}
+    }
+    public void display(Human human[]) {
+    	human[0]=new Chinese();
+    	human[1]=new Japanese();
+    	human[2]=new English();
+    	for(int i=0;i<3;i++) {
+    		human[i].sayhello();
+    	}
+    }
+}
+
+
