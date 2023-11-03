@@ -1,0 +1,10 @@
+package abstractHuman;
+
+public class Japanese implements Human {
+	
+    public double sayhello() {
+    	System.out.printf(".......");
+    	System.out.println();
+    	return 1;
+    }
+}
