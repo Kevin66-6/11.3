@@ -1,0 +1,16 @@
+package arraylistpractice;
+
+import java.util.ArrayList;
+
+public class ArraylistDemo1 {
+
+	public static void main(String[] args) {
+		ArrayList<String>  list=new ArrayList<>();
+		list.add("666");
+		list.add("666");
+		System.out.println(list);
+		
+		
+	}
+
+}
