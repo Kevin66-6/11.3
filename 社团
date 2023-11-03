@@ -1,0 +1,28 @@
+package sss;
+import java.util.*;
+public class Club {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		ArrayList<String>club1=new ArrayList<String>();
+		System.out.println("请输入A社团人数");
+		int num1=sc.nextInt();
+		for(int i=0;i<num1;i++) {
+			club1.add(sc.next());
+		}
+		ArrayList<String>club2=new ArrayList<String>();
+		System.out.println("请输入B社团人数");
+		int num2=sc.nextInt();
+		for(int i=0;i<num2;i++) {
+			club2.add(sc.next());
+		}
+		System.out.println("A社团的人有");
+		for(String str : club1) {
+			System.out.printf(str+" ");
+		}
+		System.out.println("B社团的人有");
+		for(String str : club2) {
+			System.out.printf(str+" ");
+		}
+	}
+
+}
