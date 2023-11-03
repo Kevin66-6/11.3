@@ -1,0 +1,29 @@
+package jjj;
+import java.util.*;
+public class Example {
+
+	public static void main(String[] args) {
+		
+		
+		
+     Map<String, Double> menu = new HashMap<>();
+    //将四种菜品名字及价格用put添加进menu集合中
+    menu.put("北京烤鸭", (double)299.1);
+    menu.put("西芹炒肉", (double)32.9);
+    menu.put("酸菜鱼", (double)79);
+    menu.put("铁板牛柳", (double)42.1);
+    double sum = 0;
+       
+    Iterator<Map.Entry<String, Double>> it = menu.entrySet().iterator();        
+    while (it.hasNext()) {//当获取的键值对非空时，进行while里的操作
+       Map.Entry<String, Double> entry = it.next();
+       sum = sum + entry.getValue();//entry.getValue()获取entry里的value，即每样菜品的价格
+}
+
+    System.out.println("北京烤鸭、西芹炒肉、酸菜鱼和铁板牛柳的总价格为: " + sum);
+
+   }
+		
+}
+
+}
